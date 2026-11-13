@@ -3,201 +3,216 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LUXCLOCK | Timeless Luxury</title>
-<meta name="description" content="Discover exceptional designer wall clocks at LUXCLOCK. Timeless design for extraordinary spaces.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LUXCLOCK | The Art of Time</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--black:#171713;--gold:#b69a62;--cream:#f7f5ef;--white:#fff;--muted:#85847e}
+:root{--black:#171713;--gold:#b99a61;--cream:#f7f5ef;--muted:#85847e;--white:#fff}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--black)}
-button{font:inherit;cursor:pointer}
-a{text-decoration:none;color:inherit}
-.topbar{background:var(--black);color:#eee;text-align:center;padding:10px;font-size:10px;letter-spacing:2px}
-header{height:82px;background:var(--cream);display:flex;align-items:center;justify-content:space-between;padding:0 7%;border-bottom:1px solid #e9e5dc;position:sticky;top:0;z-index:20}
-.logo{font-family:'Playfair Display',serif;font-size:29px;letter-spacing:5px}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+a{color:inherit;text-decoration:none}
+.announcement{background:var(--black);color:white;text-align:center;padding:10px;font-size:10px;letter-spacing:2px}
+header{height:78px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:var(--cream);position:sticky;top:0;z-index:20;border-bottom:1px solid #e7e3d9}
+.logo{font:600 28px 'Playfair Display';letter-spacing:4px}
 .logo span{color:var(--gold)}
-nav{display:flex;gap:30px;font-size:12px;letter-spacing:1px}
+nav{display:flex;gap:28px;font-size:11px;letter-spacing:1.5px}
 nav a:hover{color:var(--gold)}
-.actions{display:flex;gap:20px;align-items:center}
-.iconbtn{border:0;background:none;font-size:20px;position:relative}
-.count{position:absolute;right:-9px;top:-8px;background:var(--gold);color:white;border-radius:50%;font-size:10px;width:17px;height:17px;display:grid;place-items:center}
-.hero{min-height:590px;background:linear-gradient(90deg,rgba(13,13,11,.76),rgba(13,13,11,.05)),url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1800') center/cover;display:flex;align-items:center;padding:8% 10%;color:white}
-.hero-content{max-width:550px}
-.eyebrow{font-size:10px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:22px}
-h1,h2,h3{font-family:'Playfair Display',serif;font-weight:400}
-h1{font-size:clamp(45px,6vw,76px);line-height:1.12;margin-bottom:23px}
-.hero p{font-size:14px;color:#e2e0d9;line-height:1.9;max-width:410px}
-.btn{display:inline-block;padding:16px 28px;background:var(--gold);color:white;border:1px solid var(--gold);font-size:10px;letter-spacing:2px;text-transform:uppercase;transition:.3s}
+.header-actions{display:flex;gap:17px;align-items:center}
+.icon{border:0;background:none;font-size:20px;position:relative}
+.count{position:absolute;top:-7px;right:-9px;background:var(--gold);color:white;border-radius:50%;font-size:10px;width:17px;height:17px;display:grid;place-items:center}
+.hero{min-height:620px;background:linear-gradient(90deg,#141410d9 0%,#14141088 46%,transparent 100%),url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1800') center/cover;display:flex;align-items:center;padding:8% 10%;color:white}
+.hero-inner{max-width:570px}
+.eyebrow{font-size:10px;color:var(--gold);letter-spacing:4px;text-transform:uppercase}
+.hero h1{font:400 clamp(48px,6.5vw,78px)/1.12 'Playfair Display';margin:22px 0}
+.hero p{font-size:14px;line-height:2;color:#e3e0d8;max-width:410px}
+.btn{display:inline-block;background:var(--gold);color:white;padding:16px 27px;border:1px solid var(--gold);font-size:10px;letter-spacing:2px;text-transform:uppercase;transition:.25s}
 .btn:hover{background:transparent;color:var(--gold)}
-.hero .btn{margin-top:32px}
-.section{padding:90px 8%}
-.section-head{text-align:center;margin-bottom:45px}
-.section-head h2{font-size:42px;margin:12px 0}
-.section-head p{font-size:12px;color:var(--muted)}
-.filters{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:35px}
-.filter{border:1px solid #d9d3c8;padding:10px 19px;background:transparent;font-size:10px;letter-spacing:1px}
-.filter.active,.filter:hover{background:var(--black);color:white;border-color:var(--black)}
-.products{display:grid;grid-template-columns:repeat(3,1fr);gap:27px}
-.product{background:white;position:relative;overflow:hidden;transition:.3s}
-.product:hover{transform:translateY(-5px);box-shadow:0 15px 35px #00000010}
-.product img{width:100%;height:300px;object-fit:cover;display:block;background:#e9e5dc}
-.product-info{padding:22px}
-.product-info small{color:var(--gold);font-size:9px;letter-spacing:2px}
-.product-info h3{font-size:22px;margin:9px 0}
+.hero .btn{margin-top:30px}
+.trust{display:flex;justify-content:center;gap:65px;padding:28px 10px;background:white;border-bottom:1px solid #eee}
+.trust div{text-align:center;font-size:10px;letter-spacing:1px}
+.trust strong{display:block;font:19px 'Playfair Display';margin-bottom:4px}
+.section{padding:85px 8%}
+.heading{text-align:center;margin-bottom:40px}
+.heading h2{font:42px 'Playfair Display';margin:12px 0}
+.heading p{font-size:12px;color:var(--muted)}
+.filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:35px}
+.filter{padding:11px 20px;border:1px solid #d8d2c7;background:transparent;font-size:10px;letter-spacing:1px}
+.filter.active,.filter:hover{background:var(--black);color:white}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.product{background:white;position:relative;transition:.3s}
+.product:hover{transform:translateY(-5px);box-shadow:0 15px 35px #00000012}
+.product-image{height:300px;position:relative;overflow:hidden;background:#eee}
+.product-image img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.product:hover img{transform:scale(1.05)}
+.product-tag{position:absolute;top:15px;left:15px;background:var(--gold);color:white;padding:7px 10px;font-size:9px;letter-spacing:1px}
+.heart{position:absolute;top:12px;right:13px;background:white;border:0;border-radius:50%;width:34px;height:34px;font-size:19px}
+.heart.active{color:#b23d3d}
+.product-info{padding:19px}
+.product-info small{font-size:9px;letter-spacing:2px;color:var(--gold)}
+.product-info h3{font:23px 'Playfair Display';margin:8px 0}
 .price{font-size:14px;font-weight:600}
-.oldprice{text-decoration:line-through;color:#999;font-size:11px;margin-left:8px}
-.add{margin-top:17px;width:100%;padding:13px;background:var(--black);color:white;border:0;font-size:10px;letter-spacing:2px}
-.add:hover{background:var(--gold)}
-.tag{position:absolute;top:15px;left:15px;background:var(--gold);color:white;padding:7px 10px;font-size:9px;letter-spacing:1px}
-.story{background:var(--black);color:white;display:grid;grid-template-columns:1fr 1fr;min-height:430px}
-.story img{width:100%;height:100%;object-fit:cover;max-height:500px}
-.story-text{padding:75px 12%;display:flex;flex-direction:column;justify-content:center}
-.story-text h2{font-size:43px;line-height:1.2;margin-bottom:22px}
-.story-text p{color:#aaa;font-size:13px;line-height:2}
-.story-text .btn{align-self:flex-start;margin-top:28px}
-.features{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;gap:30px;padding:65px 8%;background:white}
-.feature-icon{font-size:27px;color:var(--gold);margin-bottom:15px}
-.features h3{font-size:20px;margin-bottom:9px}
-.features p{font-size:11px;color:var(--muted)}
+.old{font-size:11px;text-decoration:line-through;color:#999;margin-left:8px}
+.product-buttons{display:flex;gap:8px;margin-top:17px}
+.add,.view{flex:1;padding:12px 6px;border:1px solid var(--black);font-size:9px;letter-spacing:1px}
+.add{background:var(--black);color:white}
+.view{background:white;color:var(--black)}
+.add:hover,.view:hover{background:var(--gold);border-color:var(--gold);color:white}
+.no-results{text-align:center;grid-column:1/-1;padding:40px;color:var(--muted)}
+.story{background:var(--black);color:white;display:grid;grid-template-columns:1fr 1fr}
+.story img{width:100%;height:100%;min-height:450px;object-fit:cover}
+.story-copy{padding:75px 12%;display:flex;flex-direction:column;justify-content:center}
+.story h2{font:43px/1.2 'Playfair Display';margin:20px 0}
+.story p{font-size:13px;line-height:2;color:#aaa}
+.story .btn{align-self:flex-start;margin-top:27px}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;text-align:center;padding:65px 8%;background:white}
+.benefits h3{font:21px 'Playfair Display';margin:12px}
+.benefits p{font-size:11px;color:var(--muted)}
+.benefit-icon{font-size:27px;color:var(--gold)}
 .newsletter{text-align:center;padding:75px 15px;background:#eeeae0}
-.newsletter h2{font-size:36px;margin-bottom:12px}
-.newsletter p{font-size:12px;color:var(--muted);margin-bottom:24px}
-.newsletter form{display:flex;max-width:450px;margin:auto}
-.newsletter input{flex:1;min-width:0;padding:15px;border:1px solid #d6d0c4;background:transparent}
-.newsletter button{border:0;padding:0 22px;background:var(--black);color:white;font-size:10px;letter-spacing:1px}
+.newsletter h2{font:36px 'Playfair Display';margin-bottom:12px}
+.newsletter p{font-size:12px;color:var(--muted);margin-bottom:25px}
+.newsletter form{display:flex;max-width:460px;margin:auto}
+.newsletter input{flex:1;min-width:0;padding:14px;border:1px solid #d4cec2;background:transparent}
+.newsletter button{background:var(--black);color:white;border:0;padding:0 20px;font-size:10px;letter-spacing:1px}
 footer{background:var(--black);color:white;padding:55px 8% 25px}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
-footer .logo{margin-bottom:17px}
-footer p,footer a{color:#aaa;font-size:11px;line-height:2.2}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px}
 footer h4{font-size:11px;letter-spacing:2px;margin-bottom:17px}
-.copyright{border-top:1px solid #393933;margin-top:40px;padding-top:20px;color:#888;font-size:10px;text-align:center}
-.overlay{position:fixed;inset:0;background:#0009;z-index:50;display:none}
-.overlay.show{display:block}
-.drawer{position:absolute;right:0;top:0;height:100%;width:min(430px,100%);background:var(--cream);padding:30px;overflow-y:auto}
-.drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ddd;padding-bottom:20px;margin-bottom:20px}
-.drawer-head h2{font-size:27px}
+footer p,footer a{font-size:11px;color:#aaa;line-height:2.3}
+.copyright{border-top:1px solid #393933;margin-top:40px;padding-top:20px;text-align:center;color:#888;font-size:10px}
+.overlay,.modal{position:fixed;inset:0;background:#0009;z-index:50;display:none}
+.overlay.show,.modal.show{display:block}
+.drawer{position:absolute;right:0;top:0;height:100%;width:min(440px,100%);background:var(--cream);padding:28px;overflow:auto}
+.drawer-head{display:flex;justify-content:space-between;border-bottom:1px solid #ddd;padding-bottom:20px}
+.drawer-head h2,.modal h2{font:29px 'Playfair Display'}
 .close{border:0;background:none;font-size:27px}
-.cart-item{display:flex;gap:15px;margin:20px 0;border-bottom:1px solid #ddd;padding-bottom:18px}
+.cart-item{display:flex;gap:14px;padding:18px 0;border-bottom:1px solid #ddd}
 .cart-item img{width:85px;height:85px;object-fit:cover}
-.cart-item h3{font-size:18px}
+.cart-item h3{font:19px 'Playfair Display'}
 .cart-item p{font-size:12px;margin:8px 0}
-.qty{display:flex;gap:12px;align-items:center;font-size:12px}
-.qty button{border:1px solid #ccc;background:white;padding:3px 9px}
-.remove{border:0;background:none;color:#999;font-size:11px;margin-left:auto}
-.total{display:flex;justify-content:space-between;padding:20px 0;font-size:15px;border-top:1px solid #ddd}
-.checkout{width:100%;padding:17px;background:var(--black);color:white;border:0;letter-spacing:2px;font-size:11px}
-.checkout:hover{background:var(--gold)}
-.empty{text-align:center;color:#888;padding:50px 0;font-size:13px}
-.modal{position:fixed;inset:0;background:#000a;z-index:70;display:none;align-items:center;justify-content:center;padding:15px}
+.qty{display:flex;align-items:center;gap:10px;font-size:12px}
+.qty button{background:white;border:1px solid #ccc;padding:3px 9px}
+.remove{margin-left:auto;border:0;background:none;color:#999;font-size:10px}
+.total{display:flex;justify-content:space-between;padding:20px 0;border-top:1px solid #ddd}
+.checkout{width:100%;padding:16px;background:var(--black);color:white;border:0;letter-spacing:2px;font-size:11px}
+.empty{text-align:center;padding:50px;color:#888;font-size:13px}
+.modal{z-index:60;align-items:center;justify-content:center;padding:15px;overflow:auto}
 .modal.show{display:flex}
-.modal-content{background:var(--cream);padding:35px;width:min(480px,100%);max-height:90vh;overflow:auto}
-.modal-content h2{font-size:30px;margin-bottom:20px}
-.modal-content input,.modal-content textarea{width:100%;padding:13px;margin:7px 0 13px;border:1px solid #ddd;background:white;font:inherit;font-size:12px}
-.modal-content label{font-size:10px;letter-spacing:1px}
-.modal-content button.submit{width:100%;padding:15px;background:var(--black);color:white;border:0;margin-top:10px;letter-spacing:2px}
+.modal-box{width:min(700px,100%);max-height:90vh;overflow:auto;background:var(--cream);padding:30px}
+.modal-top{display:flex;justify-content:space-between;margin-bottom:20px}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.detail-grid img{width:100%;height:340px;object-fit:cover}
+.detail-grid h2{font:32px 'Playfair Display';margin:12px 0}
+.detail-grid p{font-size:13px;color:#777;line-height:1.8;margin:14px 0}
+.specs{font-size:11px;line-height:2.2;color:#666;margin:18px 0}
+.detail-grid .btn{margin-top:15px}
+.form-box{max-width:460px;margin:auto}
+.form-box label{font-size:10px;letter-spacing:1px}
+.form-box input,.form-box textarea{width:100%;padding:13px;border:1px solid #ddd;background:white;margin:7px 0 14px}
+.form-box .btn{width:100%;margin-top:10px}
 @media(max-width:800px){
-header{padding:0 5%;height:70px}
-nav{display:none}
-.hero{min-height:520px;padding:9% 7%}
+header{padding:0 5%;height:68px}nav{display:none}
+.hero{min-height:520px;padding:8% 7%}
 .products{grid-template-columns:repeat(2,1fr);gap:12px}
-.product img{height:220px}
-.product-info{padding:14px}
+.product-image{height:220px}
+.product-info{padding:12px}
 .story{grid-template-columns:1fr}
-.story img{height:300px}
-.features{grid-template-columns:1fr;gap:35px}
-.footer-grid{grid-template-columns:1fr 1fr}
-.footer-grid>div:first-child{grid-column:span 2}
+.story img{height:300px;min-height:0}
+.benefits{grid-template-columns:1fr;gap:35px}
 .section{padding:65px 5%}
 }
-@media(max-width:440px){
-.logo{font-size:23px;letter-spacing:3px}
-.actions{gap:13px}
-.products{grid-template-columns:1fr 1fr}
-.product img{height:170px}
-.product-info h3{font-size:17px}
-.product-info{padding:11px}
-.section-head h2{font-size:33px}
-.hero h1{font-size:46px}
+@media(max-width:450px){
+.logo{font-size:22px;letter-spacing:2px}
+.header-actions{gap:12px}
+.product-image{height:170px}
+.product-info h3{font-size:18px}
+.product-buttons{flex-direction:column}
+.heading h2{font-size:33px}
+.hero h1{font-size:47px}
+.trust{gap:20px}
+.trust div{font-size:9px}
+.detail-grid{grid-template-columns:1fr}
+.detail-grid img{height:240px}
+.footer-grid{grid-template-columns:1fr 1fr}
+.footer-grid>div:first-child{grid-column:span 2}
 }
 </style>
 </head>
 <body>
-
-<div class="topbar">COMPLIMENTARY SHIPPING ON ORDERS ABOVE ₹5,000</div>
-
+<div class="announcement">COMPLIMENTARY SHIPPING ON ORDERS ABOVE ₹5,000</div>
 <header>
-<a href="#" class="logo">LUX<span>CLOCK</span></a>
+<a class="logo" href="#">LUX<span>CLOCK</span></a>
 <nav>
-<a href="#home">HOME</a>
-<a href="#collection">COLLECTION</a>
-<a href="#story">OUR STORY</a>
-<a href="#contact">CONTACT</a>
+<a href="#home">HOME</a><a href="#collection">COLLECTION</a><a href="#story">OUR STORY</a><a href="#contact">CONTACT</a>
 </nav>
-<div class="actions">
-<button class="iconbtn" onclick="searchProducts()" aria-label="Search">⌕</button>
-<button class="iconbtn" onclick="openCart()" aria-label="Shopping bag">♧<span class="count" id="cartCount">0</span></button>
+<div class="header-actions">
+<button class="icon" onclick="searchProducts()" aria-label="Search">⌕</button>
+<button class="icon" onclick="openCart()" aria-label="Cart">♧<span class="count" id="count">0</span></button>
 </div>
 </header>
 
-<main>
 <section class="hero" id="home">
-<div class="hero-content">
+<div class="hero-inner">
 <div class="eyebrow">THE ART OF TIMELESS LIVING</div>
 <h1>Time deserves<br>to be beautiful.</h1>
-<p>Discover extraordinary wall clocks designed to transform your walls into statements of timeless elegance.</p>
-<a href="#collection" class="btn">Explore Collection →</a>
+<p>Discover extraordinary designer wall clocks that transform your walls into expressions of timeless elegance.</p>
+<a class="btn" href="#collection">EXPLORE COLLECTION →</a>
 </div>
 </section>
 
+<div class="trust">
+<div><strong>01</strong>TIMELESS DESIGN</div>
+<div><strong>02</strong>CURATED QUALITY</div>
+<div><strong>03</strong>THOUGHTFUL DETAILS</div>
+</div>
+
 <section class="section" id="collection">
-<div class="section-head">
+<div class="heading">
 <div class="eyebrow">CURATED FOR YOUR SPACE</div>
 <h2>The Signature Collection</h2>
-<p>Exceptional craftsmanship. Distinctive design. Timeless character.</p>
+<p>Distinctive design. Timeless character. Made to be admired.</p>
 </div>
 <div class="filters">
-<button class="filter active" onclick="filterProducts('All',this)">ALL CLOCKS</button>
-<button class="filter" onclick="filterProducts('Modern',this)">MODERN</button>
-<button class="filter" onclick="filterProducts('Luxury',this)">LUXURY</button>
-<button class="filter" onclick="filterProducts('Minimal',this)">MINIMAL</button>
+<button class="filter active" onclick="filter('All',this)">ALL CLOCKS</button>
+<button class="filter" onclick="filter('Luxury',this)">LUXURY</button>
+<button class="filter" onclick="filter('Modern',this)">MODERN</button>
+<button class="filter" onclick="filter('Minimal',this)">MINIMAL</button>
 </div>
 <div class="products" id="products"></div>
 </section>
 
 <section class="story" id="story">
-<img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1000" alt="Elegant luxury interior">
-<div class="story-text">
-<div class="eyebrow">MORE THAN JUST TIME</div>
-<h2>Designed to make every second count.</h2>
-<p>At LUXCLOCK, we believe a wall clock is more than an instrument. It is a reflection of personality, taste and the art of living beautifully. Every design is selected to bring sophistication into your everyday spaces.</p>
-<a href="#collection" class="btn">Discover Our World</a>
+<img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1000" alt="Elegant interior">
+<div class="story-copy">
+<div class="eyebrow">OUR PHILOSOPHY</div>
+<h2>More than just a way to tell time.</h2>
+<p>A wall clock is an expression of personality and taste. At LUXCLOCK, we celebrate beautiful spaces and carefully selected designs that bring character to every room.</p>
+<a class="btn" href="#collection">DISCOVER OUR WORLD</a>
 </div>
 </section>
 
-<section class="features">
-<div><div class="feature-icon">✧</div><h3>Exceptional Design</h3><p>Distinctive styles for extraordinary interiors.</p></div>
-<div><div class="feature-icon">◇</div><h3>Quality Promise</h3><p>Carefully selected designs and materials.</p></div>
-<div><div class="feature-icon">⌖</div><h3>Secure Shopping</h3><p>A seamless shopping experience.</p></div>
+<section class="benefits">
+<div><div class="benefit-icon">✧</div><h3>Thoughtful Design</h3><p>Distinctive styles for extraordinary interiors.</p></div>
+<div><div class="benefit-icon">◇</div><h3>Quality Selection</h3><p>Carefully curated designs for your space.</p></div>
+<div><div class="benefit-icon">⌖</div><h3>Personal Service</h3><p>Here to help you find your perfect clock.</p></div>
 </section>
 
 <section class="newsletter">
 <h2>A little more timeless.</h2>
-<p>Subscribe for new collections, exclusive launches and inspiration.</p>
+<p>Discover new collections and receive exclusive updates.</p>
 <form onsubmit="subscribe(event)">
-<input type="email" placeholder="Your email address" required>
+<input type="email" required placeholder="Your email address">
 <button>SUBSCRIBE →</button>
 </form>
 </section>
-</main>
 
 <footer id="contact">
 <div class="footer-grid">
-<div><a href="#" class="logo">LUX<span>CLOCK</span></a><p>Bringing timeless elegance to every wall.<br>Designed for spaces that tell a story.</p></div>
+<div><a class="logo" href="#">LUX<span>CLOCK</span></a><p>Bringing timeless elegance to every wall.<br>Designed for spaces that tell a story.</p></div>
 <div><h4>EXPLORE</h4><p><a href="#home">Home</a><br><a href="#collection">Shop clocks</a><br><a href="#story">Our story</a></p></div>
-<div><h4>INFORMATION</h4><p><a href="#contact">Contact us</a><br><a href="#contact">Shipping policy</a><br><a href="#contact">Returns policy</a></p></div>
+<div><h4>INFORMATION</h4><p><a href="mailto:hello@luxclock.in">Contact us</a><br>Shipping policy<br>Returns policy</p></div>
 </div>
 <div class="copyright">© 2026 LUXCLOCK. ALL RIGHTS RESERVED.</div>
 </footer>
@@ -207,132 +222,93 @@ nav{display:none}
 <div class="drawer-head"><h2>Your Shopping Bag</h2><button class="close" onclick="closeCart()">×</button></div>
 <div id="cartItems"></div>
 <div class="total"><span>Subtotal</span><strong id="subtotal">₹0</strong></div>
-<p style="font-size:10px;color:#888;margin-bottom:20px">Shipping and taxes calculated at checkout.</p>
+<p style="font-size:10px;color:#888;margin-bottom:18px">Shipping calculated at checkout.</p>
 <button class="checkout" onclick="openCheckout()">PROCEED TO CHECKOUT →</button>
 </div>
 </div>
 
-<div class="modal" id="checkoutModal">
-<div class="modal-content">
-<div style="display:flex;justify-content:space-between">
-<h2>Checkout</h2><button class="close" onclick="closeCheckout()">×</button>
+<div class="modal" id="detailModal" onclick="if(event.target===this)closeDetail()">
+<div class="modal-box">
+<div class="modal-top"><span class="eyebrow">PRODUCT DETAILS</span><button class="close" onclick="closeDetail()">×</button></div>
+<div id="detailContent"></div>
 </div>
-<p style="font-size:12px;color:#888;margin-bottom:20px">Complete your details to place your order.</p>
+</div>
+
+<div class="modal" id="checkoutModal" onclick="if(event.target===this)closeCheckout()">
+<div class="modal-box form-box">
+<div class="modal-top"><h2>Checkout</h2><button class="close" onclick="closeCheckout()">×</button></div>
 <form onsubmit="placeOrder(event)">
 <label>FULL NAME</label><input required name="name" placeholder="Your full name">
 <label>EMAIL ADDRESS</label><input required type="email" name="email" placeholder="Your email">
 <label>PHONE NUMBER</label><input required type="tel" name="phone" placeholder="Your phone number">
-<label>DELIVERY ADDRESS</label><textarea required name="address" rows="3" placeholder="House number, street, city, state, PIN code"></textarea>
+<label>DELIVERY ADDRESS</label><textarea required name="address" rows="3" placeholder="Full delivery address"></textarea>
 <div class="total"><span>Order total</span><strong id="checkoutTotal">₹0</strong></div>
-<button class="submit">PLACE ORDER</button>
+<button class="btn">PLACE DEMO ORDER</button>
 </form>
-<p style="font-size:10px;color:#999;margin-top:15px">Demo checkout only. No payment is collected.</p>
+<p style="font-size:10px;color:#999;margin-top:15px">Demo only. No payment is collected or order transmitted.</p>
 </div>
 </div>
 
 <script>
 const products=[
-{id:1,name:"The Aurelius",category:"Luxury",price:12999,old:15999,tag:"BESTSELLER",image:"https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=700"},
-{id:2,name:"The Modernist",category:"Modern",price:8999,old:10999,tag:"NEW ARRIVAL",image:"https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=700"},
-{id:3,name:"The Minimal One",category:"Minimal",price:5499,old:6999,tag:"POPULAR",image:"https://images.unsplash.com/photo-1565193298595-6c9c7d1d8d7c?w=700"},
-{id:4,name:"The Royal Gold",category:"Luxury",price:18999,old:22999,tag:"EXCLUSIVE",image:"https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=700"},
-{id:5,name:"The Contemporary",category:"Modern",price:7499,old:8999,tag:"LIMITED",image:"https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=700"},
-{id:6,name:"The Pure Form",category:"Minimal",price:3999,old:4999,tag:"ESSENTIAL",image:"https://images.unsplash.com/photo-1565193298595-6c9c7d1d8d7c?w=700"}
+{id:1,name:"The Aurelius",category:"Luxury",price:12999,old:15999,tag:"BESTSELLER",image:"https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800",desc:"A statement piece inspired by timeless elegance. A striking centrepiece for sophisticated interiors.",size:"40 cm",material:"Metal finish",style:"Luxury"},
+{id:2,name:"The Modernist",category:"Modern",price:8999,old:10999,tag:"NEW ARRIVAL",image:"https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800",desc:"Contemporary character with a clean silhouette. Designed for modern homes and creative spaces.",size:"35 cm",material:"Modern finish",style:"Contemporary"},
+{id:3,name:"The Minimal One",category:"Minimal",price:5499,old:6999,tag:"POPULAR",image:"https://images.unsplash.com/photo-1565193298595-6c9c7d1d8d7c?w=800",desc:"Understated beauty with a refined, minimal look. A subtle addition to a calm interior.",size:"30 cm",material:"Minimal finish",style:"Minimal"},
+{id:4,name:"The Royal Gold",category:"Luxury",price:18999,old:22999,tag:"EXCLUSIVE",image:"https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800",desc:"A bold luxury-inspired design that brings warmth and sophistication to your walls.",size:"45 cm",material:"Gold-tone finish",style:"Luxury"},
+{id:5,name:"The Contemporary",category:"Modern",price:7499,old:8999,tag:"LIMITED",image:"https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800",desc:"A fresh design for interiors that appreciate distinctive contemporary details.",size:"38 cm",material:"Modern finish",style:"Contemporary"},
+{id:6,name:"The Pure Form",category:"Minimal",price:3999,old:4999,tag:"ESSENTIAL",image:"https://images.unsplash.com/photo-1565193298595-6c9c7d1d8d7c?w=800",desc:"Simple, balanced and versatile. Designed to complement a wide variety of spaces.",size:"28 cm",material:"Minimal finish",style:"Minimal"}
 ];
-let cart=[];
-let activeFilter="All";
+let cart=[],wish=[],active="All";
 const money=n=>"₹"+n.toLocaleString("en-IN");
-
-function renderProducts(){
-const list=products.filter(p=>activeFilter==="All"||p.category===activeFilter);
-document.getElementById("products").innerHTML=list.map(p=>`
+function render(){
+let arr=products.filter(p=>active==="All"||p.category===active);
+document.getElementById("products").innerHTML=arr.length?arr.map(p=>`
 <article class="product">
-<div class="tag">${p.tag}</div>
-<img src="${p.image}" alt="${p.name}" loading="lazy">
-<div class="product-info">
-<small>${p.category.toUpperCase()} COLLECTION</small>
-<h3>${p.name}</h3>
-<span class="price">${money(p.price)}</span><span class="oldprice">${money(p.old)}</span>
-<button class="add" onclick="addToCart(${p.id})">ADD TO BAG +</button>
-</div></article>`).join("");
+<div class="product-image"><img src="${p.image}" alt="${p.name}" loading="lazy"><span class="product-tag">${p.tag}</span>
+<button class="heart ${wish.includes(p.id)?"active":""}" onclick="toggleWish(${p.id})" aria-label="Add to wishlist">${wish.includes(p.id)?"♥":"♡"}</button></div>
+<div class="product-info"><small>${p.category.toUpperCase()} COLLECTION</small><h3>${p.name}</h3>
+<span class="price">${money(p.price)}</span><span class="old">${money(p.old)}</span>
+<div class="product-buttons"><button class="add" onclick="add(${p.id})">ADD TO BAG +</button><button class="view" onclick="details(${p.id})">VIEW DETAILS</button></div>
+</div></article>`).join(""):'<div class="no-results">No products found.</div>';
 }
-function filterProducts(category,btn){
-activeFilter=category;
-document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));
-btn.classList.add("active");
-renderProducts();
-}
-function addToCart(id){
-const item=cart.find(x=>x.id===id);
-if(item)item.qty++;
-else cart.push({id,qty:1});
-updateCart();
-}
-function updateCart(){
-document.getElementById("cartCount").textContent=cart.reduce((a,b)=>a+b.qty,0);
-document.getElementById("cartItems").innerHTML=cart.length?cart.map(item=>{
-const p=products.find(x=>x.id===item.id);
-return `<div class="cart-item">
-<img src="${p.image}" alt="${p.name}">
-<div style="flex:1"><h3>${p.name}</h3><p>${money(p.price)}</p>
-<div class="qty"><button onclick="changeQty(${p.id},-1)">−</button>${item.qty}<button onclick="changeQty(${p.id},1)">+</button><button class="remove" onclick="removeItem(${p.id})">REMOVE</button></div>
-</div></div>`;
-}).join(""):'<div class="empty">Your shopping bag is currently empty.</div>';
-const total=cart.reduce((s,i)=>s+products.find(p=>p.id===i.id).price*i.qty,0);
+function filter(c,b){active=c;document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");render()}
+function toggleWish(id){wish.includes(id)?wish=wish.filter(x=>x!==id):wish.push(id);render()}
+function add(id){let i=cart.find(x=>x.id===id);i?i.qty++:cart.push({id,qty:1});update();openCart()}
+function update(){
+document.getElementById("count").textContent=cart.reduce((s,i)=>s+i.qty,0);
+document.getElementById("cartItems").innerHTML=cart.length?cart.map(i=>{let p=products.find(x=>x.id===i.id);return `<div class="cart-item"><img src="${p.image}" alt="${p.name}"><div style="flex:1"><h3>${p.name}</h3><p>${money(p.price)}</p><div class="qty"><button onclick="change(${p.id},-1)">−</button>${i.qty}<button onclick="change(${p.id},1)">+</button><button class="remove" onclick="remove(${p.id})">REMOVE</button></div></div></div>`}).join(""):'<div class="empty">Your shopping bag is empty.</div>';
+let total=cart.reduce((s,i)=>s+products.find(p=>p.id===i.id).price*i.qty,0);
 document.getElementById("subtotal").textContent=money(total);
 document.getElementById("checkoutTotal").textContent=money(total);
 }
-function changeQty(id,delta){
-const item=cart.find(x=>x.id===id);
-if(!item)return;
-item.qty+=delta;
-if(item.qty<=0)cart=cart.filter(x=>x.id!==id);
-updateCart();
-}
-function removeItem(id){cart=cart.filter(x=>x.id!==id);updateCart()}
+function change(id,n){let i=cart.find(x=>x.id===id);if(!i)return;i.qty+=n;if(i.qty<=0)remove(id);else update()}
+function remove(id){cart=cart.filter(i=>i.id!==id);update()}
 function openCart(){document.getElementById("cartOverlay").classList.add("show")}
 function closeCart(){document.getElementById("cartOverlay").classList.remove("show")}
-function openCheckout(){
-if(!cart.length){alert("Your shopping bag is empty.");return}
-closeCart();
-document.getElementById("checkoutModal").classList.add("show");
+function details(id){
+let p=products.find(x=>x.id===id);
+document.getElementById("detailContent").innerHTML=`<div class="detail-grid"><img src="${p.image}" alt="${p.name}"><div><div class="eyebrow">${p.category} COLLECTION</div><h2>${p.name}</h2><strong style="font-size:19px">${money(p.price)}</strong><p>${p.desc}</p><div class="specs"><b>PRODUCT DETAILS</b><br>Approx. size: ${p.size}<br>Finish: ${p.material}<br>Design: ${p.style}<br>Category: Wall clock<br><small>Specifications are illustrative and must be confirmed against the actual product.</small></div><button class="btn" onclick="add(${p.id});closeDetail()">ADD TO BAG</button></div></div>`;
+document.getElementById("detailModal").classList.add("show");
 }
+function closeDetail(){document.getElementById("detailModal").classList.remove("show")}
+function openCheckout(){if(!cart.length){alert("Your bag is empty.");return}closeCart();document.getElementById("checkoutModal").classList.add("show")}
 function closeCheckout(){document.getElementById("checkoutModal").classList.remove("show")}
 function placeOrder(e){
 e.preventDefault();
-const form=new FormData(e.target);
-const order={
-reference:"LX"+Date.now().toString().slice(-8),
-customer:form.get("name"),
-email:form.get("email"),
-address:form.get("address"),
-items:cart.map(i=>({product:products.find(p=>p.id===i.id).name,quantity:i.qty})),
-total:cart.reduce((s,i)=>s+products.find(p=>p.id===i.id).price*i.qty,0)
-};
-alert("Demo order created! Reference: "+order.reference+"\nTotal: "+money(order.total)+"\n\nThis is a demonstration only. No payment or order has been sent to a store.");
-cart=[];
-updateCart();
-closeCheckout();
-e.target.reset();
-}
-function subscribe(e){
-e.preventDefault();
-alert("Thank you for subscribing to LUXCLOCK!");
-e.target.reset();
+let f=new FormData(e.target),total=cart.reduce((s,i)=>s+products.find(p=>p.id===i.id).price*i.qty,0);
+let ref="LX"+Date.now().toString().slice(-8);
+alert("Demo order created! Reference: "+ref+"\nTotal: "+money(total)+"\nNo payment has been collected and the order has not been sent to a store.");
+cart=[];update();closeCheckout();e.target.reset();
 }
 function searchProducts(){
-const query=prompt("What clock are you looking for?");
-if(!query)return;
-activeFilter="All";
-const matches=products.filter(p=>p.name.toLowerCase().includes(query.toLowerCase())||p.category.toLowerCase().includes(query.toLowerCase()));
-document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));
-document.querySelector(".filter").classList.add("active");
-document.getElementById("products").innerHTML=matches.length?matches.map(p=>`
-<article class="product"><img src="${p.image}" alt="${p.name}"><div class="product-info"><small>${p.category.toUpperCase()}</small><h3>${p.name}</h3><span class="price">${money(p.price)}</span><button class="add" onclick="addToCart(${p.id})">ADD TO BAG +</button></div></article>`).join(""):'<p>No matching clocks found.</p>';
+let q=prompt("Search clocks by name or category:");
+if(q===null)return;
+let found=products.filter(p=>(p.name+" "+p.category).toLowerCase().includes(q.toLowerCase()));
+document.getElementById("products").innerHTML=found.length?found.map(p=>`<article class="product"><div class="product-image"><img src="${p.image}" alt="${p.name}"></div><div class="product-info"><small>${p.category}</small><h3>${p.name}</h3><span class="price">${money(p.price)}</span><div class="product-buttons"><button class="add" onclick="add(${p.id})">ADD TO BAG</button><button class="view" onclick="details(${p.id})">DETAILS</button></div></div></article>`).join(""):'<div class="no-results">No matching clocks found. Try another search.</div>';
 document.getElementById("collection").scrollIntoView();
 }
-renderProducts();
-updateCart();
+function subscribe(e){e.preventDefault();alert("Thank you for your interest in LUXCLOCK!");e.target.reset()}
+render();update();
 </script>
 </body>
 </html>
